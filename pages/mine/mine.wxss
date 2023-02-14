@@ -1,0 +1,19 @@
+.mine{
+
+}
+.mine .mine_top{
+    display:flex;
+    align-items: center;
+    padding: 30rpx 0 50rpx 50rpx;
+    background: #ccc;
+}
+.mine_name{
+    margin-left: 50rpx;
+    font-size: 40rpx;
+}
+.cell{
+    margin-top:30rpx
+}
+.van-cell__title{
+    font-size:36rpx
+}

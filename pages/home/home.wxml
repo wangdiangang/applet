@@ -1,0 +1,6 @@
+<view class="home">
+    我的首页
+    <van-button type="info" open-type="getPhoneNumber" bind:getphonenumber="getPhoneNumber">获取手机号行</van-button>
+    <van-button open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取信息真</van-button>
+
+</view>

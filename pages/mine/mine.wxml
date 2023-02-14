@@ -1,0 +1,18 @@
+<view class="mine">
+
+    <view class="mine_top">
+        <view class='mine_head'>
+                <van-image
+                round
+                width="6rem"
+                height="6rem"
+                src="https://img.yzcdn.cn/vant/cat.jpeg"
+                />
+        </view>
+        <view class="mine_name">微信名字</view>
+    </view>
+    <view class="cell">
+            <van-cell title="我的地址" is-link bind:click="clickCell"/>
+    </view>
+    
+</view>

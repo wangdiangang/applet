@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:if="{{tabbarActive=='home'}}">
+      <home></home>
+  </view>
+  <view wx:if="{{tabbarActive=='home_2'}}">
+    标签二
+  </view>
+  <view wx:if="{{tabbarActive=='mine'}}">
+    <mine></mine>
+  </view>
+
+  <!-- tabbar -->
+  <van-tabbar active="{{ tabbarActive }}" bind:change="tabbarChange">
+  <van-tabbar-item wx:for="{{tabList}}" wx:for-index="index" wx:for-item="item" wx:key="this"  name="{{item.name}}" icon="{{item.icon}}">{{item.label}}</van-tabbar-item>
+</van-tabbar>
+</view>
