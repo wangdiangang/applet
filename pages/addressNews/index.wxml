@@ -1,0 +1,8 @@
+<view class="add">
+  <view class="map">
+    <map name="map" show-location id="map" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" bindregionchange="regionchange"></map>
+  </view>
+
+  新增地址
+  <van-button bindtap="getAddress">获取微信收货地址</van-button>
+</view>

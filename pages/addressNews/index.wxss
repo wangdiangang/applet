@@ -1,0 +1,11 @@
+.map {
+  height: 300rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx;
+}
+
+.map map {
+  width: 100%;
+}

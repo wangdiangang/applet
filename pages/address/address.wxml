@@ -1,0 +1,25 @@
+<wxs module="filter">
+  var filterValue=function (val){
+    if(val.length>15){
+      return val.slice(0,14)+'...'
+    }else{
+      return val
+    }
+  }
+  module.exports.filterValue=filterValue
+</wxs>
+
+<view class="address">
+  <view class="v_address" wx:for="{{addressList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+    <view class="add_out">
+      <view class="addr">{{filter.filterValue(item.address)}}</view>
+      <view class="user_name">
+        {{item.userName}}
+        <view class="user_phone">{{item.phone}}</view>
+      </view>
+    </view>
+    <view class="edit">
+      <van-icon name="edit" bindtap="bindEdit" data-item="{{item}}"/>
+    </view>
+  </view>
+</view>
